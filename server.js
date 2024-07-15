@@ -27,6 +27,13 @@ app.get('/files', (req, res) => {
         res.status(200).json({ files });
     });
 });
+app.get('/',(req, res)=>{
+    res.status(200).send(
+        `<div style="background-color:blue ; color: white >
+        <h1> using html,my dear friends </h1>
+        </div>`
+    )
+})
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
